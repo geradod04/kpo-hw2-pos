@@ -36,7 +36,7 @@ class Program
         var provider = services.BuildServiceProvider();
 
         Console.WriteLine("=== ПОС: Преподавательская Оценка Студентов ===");
-        Console.WriteLine("«Обратная связь — спорт для двоих»`n");
+        Console.WriteLine("«Обратная связь — спорт для двоих»\n");
 
         var addStudent = provider.GetRequiredService<AddStudentUseCase>();
         var addCriterion = provider.GetRequiredService<AddCriterionUseCase>();
@@ -50,7 +50,7 @@ class Program
         bool exit = false;
         while (!exit)
         {
-            Console.WriteLine("`n--- МЕНЮ ---");
+            Console.WriteLine("\n--- МЕНЮ ---");
             Console.WriteLine("1. Добавить студента");
             Console.WriteLine("2. Добавить критерий");
             Console.WriteLine("3. Выставить оценку");
